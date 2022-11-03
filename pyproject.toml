@@ -6,6 +6,11 @@ authors = ["Altynay <idrissova.altynay@gmail.com>"]
 packages = [
 	{include = "brain_games"},
 ]
+repository = "https://github.com/Altynay7878/python-project-lvl1.git"
+classifiers = [
+    "Topic :: Software Development :: Build Tools",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
 
 [tool.poetry.dependencies]
 python = "^3.8"
@@ -26,5 +31,3 @@ flake8 = "^5.0.4"
 [build-system]
 requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
-
-repository = "https://github.com/Altynay7878/python-project-lvl1.git"
