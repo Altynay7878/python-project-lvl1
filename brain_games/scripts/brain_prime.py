@@ -1,8 +1,7 @@
-from unittest import result
 import prompt
-import random
 from brain_games.cli_main import greeting, welcome_user
 from brain_games.cli_prime import take_task_and_answer, game_rule
+
 
 def main():
     greeting()

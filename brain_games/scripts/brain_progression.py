@@ -1,7 +1,7 @@
 import prompt
-import random
 from brain_games.cli_main import greeting, welcome_user
 from brain_games.cli_progression import take_task_and_answer, game_rule
+
 
 def main():
     greeting()
@@ -27,7 +27,6 @@ def main():
 Let's try again, ''' + name + '!')
             i = range
     return result
-
 
 
 if __name__ == '__main__':

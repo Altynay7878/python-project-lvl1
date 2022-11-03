@@ -1,7 +1,7 @@
 import prompt
-import random
 from brain_games.cli_main import greeting, welcome_user
-from brain_games.cli_calc import take_task_and_answer, game_rule
+from brain_games.cli_calc import take_task_and_answer, game_rule, wrong_reply_calc
+
 
 def main():
     greeting()
@@ -14,7 +14,7 @@ def main():
 
     while i < range:
         answer, correct_answer = take_task_and_answer()
-        print('Question: '+ answer + ' ')
+        print('Question: ' + answer + ' ')
         reply = prompt.string('Your answer: ')
         if reply == correct_answer:
             print('Correct!')
@@ -24,8 +24,7 @@ def main():
                 result = print(f'Congratulations, {name}!')
                 i = range
         else:
-            result = print("'" + reply + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + correct_answer + "'" + "." + '''
-Let's try again, ''' + name + '!')
+            result = print("'" + reply + "'" + wrong_reply_calc + "'" + correct_answer + wrong_reply_calc[1] + name + '!')
             i = range
     return result
 

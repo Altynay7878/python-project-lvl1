@@ -1,7 +1,7 @@
-import math
-from random import randint, random
+from random import randint
 
 game_rule = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
 
 def take_task_and_answer():
     task = randint(0, 100)

@@ -30,5 +30,5 @@ publish: #публикация
 package-install:
 	python3 -m pip install --force-reinstall --user dist/*.whl
 
-make-lint: #проверка кода линтером flake8
+lint: #проверка кода линтером flake8
 	poetry run flake8 brain_games

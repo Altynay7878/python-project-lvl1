@@ -1,7 +1,7 @@
 import prompt
-import random
 from brain_games.cli_main import greeting, welcome_user
 from brain_games.cli_gcd import take_task_and_answer, game_rule
+
 
 def main():
     greeting()
@@ -23,11 +23,11 @@ def main():
                 result = print(f'Congratulations, {name}!')
                 i = range
         else:
-            result = print("'" + reply + "'" + ' is wrong answer ;(. Correct answer was ' + "'" + correct_answer + "'" + "." + '''
-Let's try again, ''' + name + '!')
+            result = print("'" + reply + "'" + ' is wrong answer ;(. Correct answer was ' + "'"
+            + correct_answer + "'" + "." + '''
+            Let's try again, ''' + name + '!')
             i = range
     return result
-
 
 
 if __name__ == '__main__':
